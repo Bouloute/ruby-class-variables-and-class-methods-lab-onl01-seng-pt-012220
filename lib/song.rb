@@ -43,4 +43,13 @@ class Song
     }
     hash_of_genres
   end
+
+  def self.artist_count
+    hash_of_artist = {}
+    @@genres.each{|artist|
+      hash_of_artist[artist] ||= 0
+      hash_of_artist[artist] += 1
+    }
+    hash_of_artist
+  end
 end
