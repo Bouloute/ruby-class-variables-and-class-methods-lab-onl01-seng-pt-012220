@@ -39,7 +39,7 @@ class Song
     hash_of_genres = {}
     @@genres.each{|genre|
       hash_of_genres[genre] ||= 0
-      hash_of_genres[genre] += 1      
+      hash_of_genres[genre] += 1
     }
   end
 end
