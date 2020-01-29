@@ -22,13 +22,13 @@ class Song
 
   def self.artists
     #single_artists = []
-    @@artists.collect{|artist|
-      if !(single_artists.include?(artist))
-        #single_artists#.push(artist)
-        artist
-      end
-    }
+    #@@artists.each{|artist|
+      #if !(single_artists.include?(artist))
+        #single_artists.push(artist)
+      #end
+    #}
     #single_artists
+    @@artists.uniq
   end
 
   def self.genres
