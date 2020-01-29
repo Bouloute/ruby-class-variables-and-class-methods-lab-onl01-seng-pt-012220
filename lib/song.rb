@@ -27,7 +27,7 @@ class Song
         single_artists.push(artist)
       end
     }
-
+    single_artists
   end
 
   def self.genres
