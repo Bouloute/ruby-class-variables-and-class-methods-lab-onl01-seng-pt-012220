@@ -21,7 +21,7 @@ class Song
   end
 end
 
-Song.new
-Song.new
-Song.new
+Song.new("1","one","un")
+Song.new("1","one","un")
+Song.new("1","one","un")
 Song.count
