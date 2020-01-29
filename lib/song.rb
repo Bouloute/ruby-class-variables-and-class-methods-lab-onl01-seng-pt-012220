@@ -11,8 +11,9 @@ class Song
     @@artists.push(artist)
 
     @genre = genre
-      puts (@@genres.include?(genre))
-
+    if @@genres.include?(genre) == false
+      @@genres.push(genre)
+    end
 
     @@count += 1
   end
@@ -29,5 +30,3 @@ class Song
     @@genres
   end
 end
-
-Song.new("1","2","3")
