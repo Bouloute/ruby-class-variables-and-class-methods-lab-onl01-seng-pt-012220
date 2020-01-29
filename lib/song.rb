@@ -29,3 +29,5 @@ class Song
     @@genres
   end
 end
+
+Song.new("1","2","3")
