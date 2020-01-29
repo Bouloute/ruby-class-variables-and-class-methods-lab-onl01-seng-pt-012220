@@ -20,3 +20,8 @@ class Song
     @@count
   end
 end
+
+Song.new
+Song.new
+Song.new
+Song.count
