@@ -12,7 +12,7 @@ class Song
 
     @genre = genre
       puts (@@genres.include?(genre))
-      
+
 
     @@count += 1
   end
