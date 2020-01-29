@@ -19,9 +19,12 @@ class Song
   def self.count
     @@count
   end
-end
 
-Song.new("1","one","un")
-Song.new("1","one","un")
-Song.new("1","one","un")
-Song.count
+  def self.artists
+    @@artits
+  end
+
+  def self.genres
+    @@genres
+  end
+end
