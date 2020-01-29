@@ -11,9 +11,7 @@ class Song
     @@artists.push(artist)
 
     @genre = genre
-    #if @@genres.include?(genre) == false
-      @@genres.push(genre)
-    #end
+    @@genres.push(genre)
 
     @@count += 1
   end
@@ -23,7 +21,13 @@ class Song
   end
 
   def self.artists
-    @@artists
+    single_artists = []
+    @@artists.each{|artist|
+      if !(single_artists.include?(artist))
+        single_artists.push(artist)
+      end
+    }
+    
   end
 
   def self.genres
