@@ -11,9 +11,9 @@ class Song
     @@artists.push(artist)
 
     @genre = genre
-    if @@genres.include?(genre) == false
+    #if @@genres.include?(genre) == false
       @@genres.push(genre)
-    end
+    #end
 
     @@count += 1
   end
