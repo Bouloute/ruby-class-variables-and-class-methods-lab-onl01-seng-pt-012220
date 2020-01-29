@@ -41,5 +41,6 @@ class Song
       hash_of_genres[genre] ||= 0
       hash_of_genres[genre] += 1
     }
+    hash_of_genres
   end
 end
